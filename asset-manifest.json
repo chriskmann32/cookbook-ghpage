@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/cookbook-ghpage/static/css/main.073c9b0a.css",
-    "main.js": "/cookbook-ghpage/static/js/main.7acf2a79.js",
-    "static/js/787.f7a02af2.chunk.js": "/cookbook-ghpage/static/js/787.f7a02af2.chunk.js",
-    "static/media/logo.svg": "/cookbook-ghpage/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/cookbook-ghpage/static/css/main.e6c13ad2.css",
+    "main.js": "/cookbook-ghpage/static/js/main.5e341636.js",
     "index.html": "/cookbook-ghpage/index.html",
-    "main.073c9b0a.css.map": "/cookbook-ghpage/static/css/main.073c9b0a.css.map",
-    "main.7acf2a79.js.map": "/cookbook-ghpage/static/js/main.7acf2a79.js.map",
-    "787.f7a02af2.chunk.js.map": "/cookbook-ghpage/static/js/787.f7a02af2.chunk.js.map"
+    "main.e6c13ad2.css.map": "/cookbook-ghpage/static/css/main.e6c13ad2.css.map",
+    "main.5e341636.js.map": "/cookbook-ghpage/static/js/main.5e341636.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7acf2a79.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5e341636.js"
   ]
 }
