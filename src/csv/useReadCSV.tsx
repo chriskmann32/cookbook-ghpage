@@ -28,7 +28,7 @@ const useReadCSV = () => {
     const [values, setValues] = React.useState<Values | undefined>()
 
     const getCSV = () => {
-        Papa.parse('/recipes.csv', {
+        Papa.parse('raw.githubusercontent.com/chriskmann32/cookbook-ghpage/main/recipes.csv', {
             header: true,
             download: true,
             skipEmptyLines: true,
@@ -36,6 +36,7 @@ const useReadCSV = () => {
             complete: (results: ParseResult<Recipes>) => {
                 // @ts-ignore
                 setValues(results)
+                console.log(results)
             },
         })
     }
