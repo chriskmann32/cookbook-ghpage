@@ -25,28 +25,8 @@ type Values = {
 }
 
 const useReadCSV = () => {
-    const [values, setValues] = React.useState<Values | undefined>()
-
-    const getCSV = () => {
-        Papa.parse('raw.githubusercontent.com/chriskmann32/cookbook-ghpage/main/recipes.csv', {
-            header: true,
-            download: true,
-            skipEmptyLines: true,
-            delimiter: ',',
-            complete: (results: ParseResult<Recipes>) => {
-                // @ts-ignore
-                setValues(results)
-                console.log(results)
-            },
-        })
-    }
-
-    React.useEffect(() => {
-        getCSV()
-    }, [])
-
-    console.log(values);
-    return values
+    fetch('https://drive.google.com/file/d/1jARClhNNlATxcg5VK8Wqa8zTAZsl0Yv3/view?usp=drive_link')
+        .then(res => console.log(res))
 }
 
 export default useReadCSV
