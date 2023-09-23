@@ -3,5 +3,6 @@ on: [push]
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env: ./cookbook-ghpage
     steps:
       - run: npm run deploy -- -m "DEPLOYING"
