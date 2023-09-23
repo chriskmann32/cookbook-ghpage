@@ -1,5 +1,5 @@
 name: Build and Deploy Cookbook
-on: push
+on: [push]
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
