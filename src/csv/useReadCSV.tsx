@@ -25,7 +25,7 @@ type Values = {
 }
 
 const useReadCSV = () => {
-    fetch('https://drive.google.com/file/d/1jARClhNNlATxcg5VK8Wqa8zTAZsl0Yv3/view?usp=drive_link')
+    fetch('raw.githubusercontent.com/chriskmann32/cookbook-ghpage/main/recipes.csv')
         .then(res => console.log(res))
 }
 
