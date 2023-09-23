@@ -1,6 +1,3 @@
-import * as React from 'react'
-import Papa, { ParseResult } from 'papaparse'
-
 type Recipes = {
     recipe_id: string,
     recipe_name: string,

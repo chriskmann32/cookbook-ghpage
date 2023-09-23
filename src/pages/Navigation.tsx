@@ -1,10 +1,9 @@
-import * as React from 'react'
-import BottomNavigation from '@mui/material/BottomNavigation';
-import { BottomNavigationAction } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import AddBoxIcon from '@mui/icons-material/AddBox';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import HomeIcon from '@mui/icons-material/Home';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import { BottomNavigationAction } from '@mui/material';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import * as React from 'react';
 
 const Navigation = () => {
     const [value, setValue] = React.useState(0);
