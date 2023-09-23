@@ -1,0 +1,7 @@
+name: Build and Deploy Cookbook
+on: push
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run deploy -- -m "Deploying"
