@@ -10,6 +10,9 @@ jobs:
       
       - name: Directory List
         run: ls -R
+
+      - name: Install
+        run: npm install
       
       - name: Deploy
         run: npm run deploy -- -m "DEPLOYING"
