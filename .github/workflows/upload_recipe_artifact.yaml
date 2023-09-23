@@ -2,9 +2,11 @@ name: Upload Recipe CSV
 on:
   workflow_dispatch:
 jobs:
-  build-deploy:
+  upload-artifact:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@main
+      
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
