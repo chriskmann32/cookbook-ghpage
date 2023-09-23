@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo ls -R
+        echo dir -R
         npm run deploy -- -m "Deploying"
