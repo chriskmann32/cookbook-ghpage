@@ -1,3 +1,7 @@
+import * as path from 'path';
+import * as fs from 'fs';
+import {parse} from 'csv-parse'
+
 type Recipes = {
     recipe_id: string,
     recipe_name: string,
@@ -9,21 +13,28 @@ type Recipes = {
     tod: string
 }
 
-type Ingredients = {
-
-}
-
-type Instructions = {
-
-}
-
-type Values = {
-    recipes: Recipes[]
-}
-
 const useReadCSV = () => {
-    fetch('raw.githubusercontent.com/chriskmann32/cookbook-ghpage/main/recipes.csv')
-        .then(res => console.log(res))
+    const csvFilePath = path.resolve(__dirname,'recipes.csv');
+    const headers = [
+        'recipe_id',
+        'recipe_name',
+        'category',
+        'rating',
+        'cook_time',
+        'servings',
+        'category_sub',
+        'tod'
+    ];
+    const fileContent = fs.readFileSync(csvFilePath, {encoding: 'utf-8'});
+    parse(fileContent, {
+        delimiter: ',',
+        columns: headers
+    }, (error, result: Recipes[]) => {
+        if (error) {
+            console.log(error);
+        }
+        console.log("Result",result)
+    })
 }
 
 export default useReadCSV
