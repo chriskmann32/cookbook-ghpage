@@ -1,0 +1,11 @@
+name: Upload Recipe CSV
+on: [push]
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: recipes
+          path: src/csv/recipes.csv
