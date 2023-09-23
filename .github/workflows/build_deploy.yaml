@@ -4,4 +4,6 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: npm run deploy -- -m "Deploying"
+      - run: |
+        ls -d */
+        npm run deploy -- -m "Deploying"
