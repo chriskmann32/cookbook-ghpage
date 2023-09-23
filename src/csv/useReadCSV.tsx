@@ -24,8 +24,14 @@ const useReadCSV = () => {
     ];
 }
 */
+import axios from 'axios'
 
-const useReadCSV = () => {}
+const useReadCSV = () => {
+    axios.get('https://api.github.com/repos/chriskmann32/cookbook-ghpage/actions/artifacts/942188276/zip')
+        .then((response) => {
+            console.log(response)
+        })
+}
 
 export default useReadCSV
 
