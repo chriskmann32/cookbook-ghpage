@@ -6,4 +6,10 @@ jobs:
     env: 
       working-directory: ./cookbook-ghpage
     steps:
-      - run: npm run deploy -- -m "DEPLOYING"
+      - uses: actions/checkout@main
+      
+      - name: Directory List
+        run: ls -R
+      
+      - name: Deploy
+        run: npm run deploy -- -m "DEPLOYING"
