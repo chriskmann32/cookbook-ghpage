@@ -1,28 +1,19 @@
 import Papa, { ParseResult } from 'papaparse'
-/*
-type Recipes = {
-    recipe_id: string,
-    recipe_name: string,
-    category: string,
-    rating: string,
-    cook_time: string,
-    servings: string,
-    category_sub: string,
-    tod: string
-}
-*/
+import { Recipe } from './recipe'
 
-const useReadCSV = () => {
-    fetch(process.env.PUBLIC_URL +  '/recipes.csv')
+function useReadCSV(url: string): Promise<Recipe[]> {
+    // process.env.PUBLIC_URL +  '/recipes.csv'
+    return fetch(url)
         .then(r => r.text())
-        .then((text) => {
-            return Papa.parse(text, {
+        .then((text: string) => {
+            return Papa.parse<Recipe>(text, {
                 delimiter: "|",
-                header: true
+                header: true,
+                skipEmptyLines: true
             })
         })
-        .then((data) => {
-            console.log(data);
+        .then((data: ParseResult<Recipe>) => {
+            return data.data
         })
 }
 
