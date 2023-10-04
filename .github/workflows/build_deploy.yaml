@@ -1,7 +1,10 @@
 name: Build and Deploy Cookbook
 on: [push]
 jobs:
-  build-deploy:
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     env: 
       working-directory: ./cookbook-ghpage
@@ -13,11 +16,6 @@ jobs:
 
       - name: Install
         run: npm install
-
-      - name: Git Configure
-        run: |
-          git config --global user.email "chriskmann32@gmail.com"
-          git config --global user.name "chriskmann32"
       
       - name: Deploy
-        run: npm run deploy -- -m "DEPLOYING"
+        uses: actions/deploy-pages@v2
