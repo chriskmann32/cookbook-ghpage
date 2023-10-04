@@ -1,7 +1,7 @@
 import Papa, { ParseResult } from 'papaparse'
 import { Recipe } from './recipe'
 
-function useReadCSV(url: string): Promise<Recipe[]> {
+async function readCSV(url: string): Promise<Recipe[]> {
     // process.env.PUBLIC_URL +  '/recipes.csv'
     return fetch(url)
         .then(r => r.text())
@@ -17,5 +17,5 @@ function useReadCSV(url: string): Promise<Recipe[]> {
         })
 }
 
-export default useReadCSV
+export default readCSV
 
