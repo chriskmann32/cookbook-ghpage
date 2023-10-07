@@ -12,14 +12,10 @@ jobs:
       - name: Build Page
         run: npm run build
 
-      - name: Zip Build
-        run: |
-          zip -r github-pages.zip build
-
-      - uses: actions/upload-artifact@v3
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
-          path: github-pages.zip
+          path: ./build
 
   deploy:
     needs: build
