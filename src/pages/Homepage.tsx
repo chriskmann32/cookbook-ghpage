@@ -17,7 +17,15 @@ const columns: GridColDef[] = [
 ]
 
 function Homepage() {
+    console.log('Rendering Homepage');
     const [recipes, setRecipes] = useState<Recipe[]>();
+
+    function recipeSelection() {
+        if (recipes) {
+            return <div>FOUND RECIPES</div>
+        }
+        return <div>NO RECIPES FOUND</div>
+    }
 
     useEffect(() => {
         console.log('Starting Fetch...')
@@ -46,17 +54,7 @@ function Homepage() {
 
     return(
         <div style={{textAlign: 'center'}}>
-            <DataGrid 
-                rows={recipes!}
-                columns={columns}
-                initialState={{
-                    pagination: {
-                        paginationModel: {page: 0, pageSize: 5}
-                    }
-                }}
-                pageSizeOptions={[5,10]}
-                checkboxSelection
-            />
+            {recipeSelection()}
         </div>
     )
 }

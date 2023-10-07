@@ -1,21 +1,37 @@
 name: Build and Deploy Cookbook
 on: [push]
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+
+      - name: Build Page
+        run: npm run build
+
+      - name: Zip Build
+        run: |
+          zip -r github-pages.zip build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: github-pages.zip
+
   deploy:
+    needs: build
+
     permissions:
       pages: write
       id-token: write
-    runs-on: ubuntu-latest
-    env: 
-      working-directory: ./cookbook-ghpage
-    steps:
-      - uses: actions/checkout@main
-      
-      - name: Directory List
-        run: ls -R
 
-      - name: Install
-        run: npm install
-      
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    runs-on: ubuntu-latest
+    
+    steps:
       - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v2
