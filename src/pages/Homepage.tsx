@@ -4,6 +4,7 @@ import { Recipe } from "../csv/recipe";
  import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
+    {field: 'id', headerName: 'ID'},
     {field: 'recipe_name', headerName: 'Recipe Name'},
     {field: 'category', headerName: 'Category'},
     {field: 'rating', headerName: 'Rating'},
