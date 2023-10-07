@@ -4,7 +4,6 @@ import { Recipe } from "../csv/recipe";
  import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-    {field: 'recipe_id', headerName: 'Recipe ID'},
     {field: 'recipe_name', headerName: 'Recipe Name'},
     {field: 'category', headerName: 'Category'},
     {field: 'rating', headerName: 'Rating'},
@@ -44,7 +43,7 @@ function Homepage() {
                 console.log('Retrieving Recipe...');
                 return recipes.map(function(currentRecipe,_) {
                         return new Recipe(
-                            currentRecipe.recipe_id,
+                            currentRecipe.id,
                             currentRecipe.recipe_name,
                             currentRecipe.category,
                             currentRecipe.rating,
