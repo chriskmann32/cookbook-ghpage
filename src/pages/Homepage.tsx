@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import readCSV from "../csv/readCSV"
 import { Recipe } from "../csv/recipe";
-import { GridColDef, DataGrid } from "@mui/x-data-grid";
+// import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 
-
+/*
 const columns: GridColDef[] = [
     {field: 'recipe_id', headerName: 'Recipe ID'},
     {field: 'recipe_name', headerName: 'Recipe Name'},
@@ -15,6 +15,7 @@ const columns: GridColDef[] = [
     {field: 'category_sub', headerName: 'Sub Category'},
     {field: 'tod', headerName: 'Time of Day'}
 ]
+*/
 
 function Homepage() {
     console.log('Rendering Homepage');
