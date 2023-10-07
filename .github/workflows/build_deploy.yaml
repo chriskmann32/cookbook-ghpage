@@ -6,6 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
+      - name: Install
+        run: npm install
+
       - name: Build Page
         run: npm run build
 
