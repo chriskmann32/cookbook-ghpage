@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import readCSV from "../csv/readCSV"
 import { Recipe } from "../csv/recipe";
-// import { GridColDef, DataGrid } from "@mui/x-data-grid";
+ import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
-
-/*
 const columns: GridColDef[] = [
     {field: 'recipe_id', headerName: 'Recipe ID'},
     {field: 'recipe_name', headerName: 'Recipe Name'},
@@ -15,7 +13,6 @@ const columns: GridColDef[] = [
     {field: 'category_sub', headerName: 'Sub Category'},
     {field: 'tod', headerName: 'Time of Day'}
 ]
-*/
 
 function Homepage() {
     console.log('Rendering Homepage');
@@ -23,7 +20,17 @@ function Homepage() {
 
     function recipeSelection() {
         if (recipes) {
-            return <div>FOUND RECIPES</div>
+            return <DataGrid
+                        rows={recipes}
+                        columns={columns}
+                        initialState={{
+                            pagination: {
+                                paginationModel: {page: 0, pageSize: 5},
+                            },
+                        }}
+                        pageSizeOptions={[5,10]}
+                        checkboxSelection
+                    />
         }
         return <div>NO RECIPES FOUND</div>
     }
