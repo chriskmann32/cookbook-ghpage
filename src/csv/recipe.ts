@@ -9,7 +9,7 @@ export class Recipe {
     tod: string
 
     constructor(
-        recipe_id: string,
+        id: string,
         recipe_name: string,
         category: string,
         rating: string,
@@ -18,7 +18,7 @@ export class Recipe {
         category_sub: string,
         tod: string
     ) {
-        this.id = recipe_id;
+        this.id = id;
         this.recipe_name = recipe_name;
         this.category = category;
         this.rating = rating;
