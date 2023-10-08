@@ -26,7 +26,7 @@ export class Recipe {
         category_sub: string,
         tod: string
     ) {
-        this.id = recipe_id;
+        this.id = Math.random().toString().substring(2,9) + '_RECIPE';
         this.recipe_id = recipe_id;
         this.recipe_name = recipe_name;
         this.category = category;

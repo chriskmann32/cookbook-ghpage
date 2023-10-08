@@ -36,9 +36,7 @@ function Ingredients(props) {
                 .then((ingredients) => {
                     console.log('Retrieveing Ingredients...');
                     const filteredIngredients: Ingredient[] = ingredients.filter((ingredient: Ingredient) => {
-                        if (props.ids.contains(ingredient.recipe_id)) {
-                            return ingredient
-                        }
+                        return props.ids.contains(ingredient.recipe_id)
                     })
                     return filteredIngredients.map(function(currentIngredient,_) {
                         return new Ingredient(
