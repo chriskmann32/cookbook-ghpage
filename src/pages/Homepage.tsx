@@ -4,14 +4,13 @@ import { Recipe } from "../csv/recipe";
  import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-    {field: 'id', headerName: 'ID'},
-    {field: 'recipe_name', headerName: 'Recipe Name'},
-    {field: 'category', headerName: 'Category'},
-    {field: 'rating', headerName: 'Rating'},
-    {field: 'cook_time', headerName: 'Cook Time'},
-    {field: 'servings', headerName: 'Servings'},
-    {field: 'category_sub', headerName: 'Sub Category'},
-    {field: 'tod', headerName: 'Time of Day'}
+    {field: 'recipe_name', headerName: 'Recipe Name', resizable: true},
+    {field: 'category', headerName: 'Category', resizable: true},
+    {field: 'rating', headerName: 'Rating', resizable: true},
+    {field: 'cook_time', headerName: 'Cook Time', resizable: true},
+    {field: 'servings', headerName: 'Servings', resizable: true},
+    {field: 'category_sub', headerName: 'Sub Category', resizable: true},
+    {field: 'tod', headerName: 'Time of Day', resizable: true}
 ]
 
 function Homepage() {
@@ -25,11 +24,18 @@ function Homepage() {
                         columns={columns}
                         initialState={{
                             pagination: {
-                                paginationModel: {page: 0, pageSize: 5},
+                                paginationModel: {pageSize: recipes.length},
                             },
                         }}
-                        pageSizeOptions={[5,10]}
                         checkboxSelection
+                        onRowSelectionModelChange={(ids) => {
+                            const selectedIds = new Set(ids);
+                            const selectedRowData: Recipe[] = recipes.filter((row) =>
+                                selectedIds.has(row.id));
+                            selectedRowData.map((selectedRecipe) => {
+                                console.log(`Selected Recipes: ${selectedRecipe.id}`);
+                            })
+                        }}
                     />
         }
         return <div>NO RECIPES FOUND</div>
