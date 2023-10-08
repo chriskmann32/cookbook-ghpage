@@ -19,7 +19,7 @@ function App() {
       <Navigation />
       <HashRouter>
         <Routes>
-          <Route path='/' element={<Homepage setIds={setIds} recipes={recipes} setRecipes={setRecipes}/>}></Route>
+          <Route path='/homepage' element={<Homepage setIds={setIds} recipes={recipes} setRecipes={setRecipes}/>}></Route>
           <Route path='/ingredients' element={<Ingredients ids={ids} ingredients={ingredients} setIngredients={setIngredients}/>}></Route>
           <Route path='/instructions' element={<Instructions/>}></Route>
         </Routes>
