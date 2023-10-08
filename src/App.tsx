@@ -9,11 +9,13 @@ import { Ingredient } from './csv/ingredient';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import {useState} from 'react'
 import DefaultPage from './pages/DefaultPage';
+import { Instruction } from './csv/instruction';
 
 function App() {
   const [ids, setIds] = useState<String[]>();
   const [recipes, setRecipes] = useState<Recipe[]>();
   const [ingredients, setIngredients] = useState<Ingredient[]>();
+  const [instructions, setInstructions] = useState<Instruction[]>();
 
   return (
     <React.Fragment>
@@ -23,7 +25,7 @@ function App() {
           <Route path='/' element={<DefaultPage/>}></Route>
           <Route path='/homepage' element={<Homepage setIds={setIds} recipes={recipes} setRecipes={setRecipes}/>}></Route>
           <Route path='/ingredients' element={<Ingredients ids={ids} ingredients={ingredients} setIngredients={setIngredients}/>}></Route>
-          <Route path='/instructions' element={<Instructions/>}></Route>
+          <Route path='/instructions' element={<Instructions ids={ids} instructions={instructions} setInstructions={setInstructions}/>}></Route>
         </Routes>
       </HashRouter>
     </React.Fragment>

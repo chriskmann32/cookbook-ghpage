@@ -4,9 +4,9 @@ import { readIngredientsCSV } from "../csv/readCSV";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-    {field: 'quantity', headerName: 'Quantity'},
-    {field: 'unit', headerName: 'Unit'},
-    {field: 'ingredient', headerName: 'Ingredient'}
+    {field: 'quantity', headerName: 'Quantity', flex: 1},
+    {field: 'unit', headerName: 'Unit', flex: 1},
+    {field: 'ingredient', headerName: 'Ingredient', flex: 3}
 ]
 
 function Ingredients({ids, ingredients, setIngredients}) {
@@ -28,7 +28,7 @@ function Ingredients({ids, ingredients, setIngredients}) {
     }
     
     useEffect(() => {
-        console.log('Staring Ingredient Fetch...')
+        console.log('Staring Ingredient Fetch...');
         const fetchIngredients = async () => {
             const fetchIngredientReturn: Ingredient[] =
             await readIngredientsCSV(process.env.PUBLIC_URL + '/ingredients.csv')

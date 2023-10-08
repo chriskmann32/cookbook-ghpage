@@ -1,6 +1,6 @@
 function DefaultPage() {
     return (
-        <div>
+        <div style={{textAlign: 'center'}}>
             <h1>Welcome to the Cookbook</h1>
         </div>
     )
