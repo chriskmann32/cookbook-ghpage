@@ -13,28 +13,28 @@ const columns: GridColDef[] = [
     {field: 'tod', headerName: 'Time of Day', flex: 2}
 ]
 
-function Homepage(props) {
+function Homepage({setIds, recipes, setRecipes}) {
     console.log('Rendering Homepage');
 
     function recipeSelection() {
-        if (props.recipes) {
+        if (recipes) {
             return <DataGrid
-                        rows={props.recipes}
+                        rows={recipes}
                         columns={columns}
                         initialState={{
                             pagination: {
-                                paginationModel: {pageSize: props.recipes.length},
+                                paginationModel: {pageSize: recipes.length},
                             },
                         }}
                         checkboxSelection
                         onRowSelectionModelChange={(ids) => {
                             const selectedIds = new Set(ids);
-                            const selectedRowData: Recipe[] = props.recipes.filter((row) =>
+                            const selectedRowData: Recipe[] = recipes.filter((row) =>
                                 selectedIds.has(row.id));
                             const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
                                 return selectedRecipe.id;
                             })
-                            props.setIds(idsArray);
+                            setIds(idsArray);
                             idsArray.forEach((currentId) => {
                                 console.log(`Selected Recipes: ${currentId}`);
                             })
@@ -64,10 +64,10 @@ function Homepage(props) {
                         )
                     });
                 })
-            props.setRecipes(recipeFetchReturn)
+            setRecipes(recipeFetchReturn)
         }
         fetchRecipes()
-    },[])
+    },[setRecipes])
 
     return(
         <div style={{textAlign: 'center'}}>

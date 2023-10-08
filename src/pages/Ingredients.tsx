@@ -9,17 +9,17 @@ const columns: GridColDef[] = [
     {field: 'ingredient', headerName: 'Ingredient'}
 ]
 
-function Ingredients(props) {
+function Ingredients({ids, ingredients, setIngredients}) {
     console.log('Rendering Ingredients');
 
     function ingredientSelection() {
-        if (props.ingredients) {
+        if (ingredients) {
             return <DataGrid
-                    rows={props.ingredients}
+                    rows={ingredients}
                     columns={columns}
                     initialState={{
                         pagination: {
-                            paginationModel: {pageSize: props.ingredients.length},
+                            paginationModel: {pageSize: ingredients.length},
                         },
                     }}
                     />
@@ -35,7 +35,7 @@ function Ingredients(props) {
                 .then((ingredients) => {
                     console.log('Retrieveing Ingredients...');
                     const filteredIngredients: Ingredient[] = ingredients.filter((ingredient: Ingredient) => {
-                        return props.ids.contains(ingredient.recipe_id)
+                        return ids.contains(ingredient.recipe_id)
                     })
                     return filteredIngredients.map(function(currentIngredient,_) {
                         return new Ingredient(
@@ -46,12 +46,12 @@ function Ingredients(props) {
                         )
                     });
                 })
-            props.setIngredients(fetchIngredientReturn)
+            setIngredients(fetchIngredientReturn)
         }
-        if (props.ids) {
+        if (ids) {
             fetchIngredients();
         }
-    }, [props.ids])
+    }, [ids, setIngredients])
 
     return(
         <div style={{textAlign: 'center'}}>
