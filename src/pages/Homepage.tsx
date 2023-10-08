@@ -45,7 +45,7 @@ function Homepage() {
                 console.log('Actually Updating?')
                 return recipes.map(function(currentRecipe,_) {
                         return new Recipe(
-                            currentRecipe.id,
+                            currentRecipe.recipe_id,
                             currentRecipe.recipe_name,
                             currentRecipe.category,
                             currentRecipe.rating,
