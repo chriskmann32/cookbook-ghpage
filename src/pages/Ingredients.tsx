@@ -1,7 +1,10 @@
 function Ingredients(props) {
-    props.ids.forEach((currentId) => {
-        console.log(`Recipe Ids Ingredients: ${currentId}`)
-    })
+    if (props.ids) {
+        props.ids.forEach((currentId) => {
+            console.log(`Recipe Ids Ingredients: ${currentId}`)
+        })
+    }
+    
     return(
         <div style={{textAlign: 'center'}}>
             <h1>Ingredients</h1>
