@@ -42,7 +42,7 @@ function Homepage() {
             await readCSV(process.env.PUBLIC_URL +  '/recipes.csv')
                 .then((recipes) => {
                 console.log('Retrieving Recipe...');
-                console.log('Updating?')
+                console.log('Actually Updating?')
                 return recipes.map(function(currentRecipe,_) {
                         return new Recipe(
                             currentRecipe.id,
