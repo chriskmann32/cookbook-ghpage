@@ -1,7 +1,7 @@
 import Papa, { ParseResult } from 'papaparse'
 import { Recipe } from './recipe'
-import { Ingredients } from './ingredient'
-import { Instructions } from './instructions'
+import { Ingredient } from './ingredient'
+import { Instruction } from './instruction'
 
 export async function readRecipeCSV(url: string): Promise<Recipe[]> {
     // process.env.PUBLIC_URL +  '/recipes.csv'
@@ -19,34 +19,34 @@ export async function readRecipeCSV(url: string): Promise<Recipe[]> {
         })
 }
 
-export async function readIngredientsCSV(url: string): Promise<Ingredients[]> {
-    // process.env.PUBLIC_URL +  '/ingredients.csv'
+export async function readIngredientsCSV(url: string): Promise<Ingredient[]> {
+    // process.env.PUBLIC_URL +  '/ingredient.csv'
     return fetch(url)
         .then(r => r.text())
         .then((text: string) => {
-            return Papa.parse<Ingredients>(text, {
+            return Papa.parse<Ingredient>(text, {
                 delimiter: "|",
                 header: true,
                 skipEmptyLines: true
             })
         })
-        .then((data: ParseResult<Ingredients>) => {
+        .then((data: ParseResult<Ingredient>) => {
             return data.data
         })
 }
 
-export async function readInstructionsCSV(url: string): Promise<Instructions[]> {
-    // process.env.PUBLIC_URL +  '/instructions.csv'
+export async function readInstructionsCSV(url: string): Promise<Instruction[]> {
+    // process.env.PUBLIC_URL +  '/instruction.csv'
     return fetch(url)
         .then(r => r.text())
         .then((text: string) => {
-            return Papa.parse<Instructions>(text, {
+            return Papa.parse<Instruction>(text, {
                 delimiter: "|",
                 header: true,
                 skipEmptyLines: true
             })
         })
-        .then((data: ParseResult<Instructions>) => {
+        .then((data: ParseResult<Instruction>) => {
             return data.data
         })
 }

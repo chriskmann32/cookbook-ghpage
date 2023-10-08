@@ -1,4 +1,4 @@
-export class Instructions {
+export class Instruction {
     recipe_id: string;
     step_number: string;
     step: string;
