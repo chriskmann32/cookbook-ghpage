@@ -9,6 +9,13 @@ export class Recipe {
     category_sub: string;
     tod: string
 
+    convertCookTime(cookTime: string): string {
+        const cookTimeInt = parseInt(cookTime);
+        const hours = Math.floor(cookTimeInt / 60);
+        const minutes = cookTimeInt % 60;
+        return (hours != 0) ? `${hours}:${minutes}`  : `${minutes}`;
+    }
+
     constructor(
         recipe_id: string,
         recipe_name: string,
@@ -24,7 +31,7 @@ export class Recipe {
         this.recipe_name = recipe_name;
         this.category = category;
         this.rating = rating;
-        this.cook_time = cook_time;
+        this.cook_time = this.convertCookTime(cook_time);
         this.servings = servings;
         this.category_sub = category_sub
         this.tod = tod;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import readCSV from "../csv/readCSV"
+import {readRecipeCSV} from "../csv/readCSV"
 import { Recipe } from "../csv/recipe";
  import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
@@ -46,13 +46,12 @@ function Homepage(props) {
     }
 
     useEffect(() => {
-        console.log('Starting Fetch...')
+        console.log('Starting Recipe Fetch...')
         const fetchRecipes = async () => {
             const recipeFetchReturn: Recipe[] =
-            await readCSV(process.env.PUBLIC_URL +  '/recipes.csv')
+            await readRecipeCSV(process.env.PUBLIC_URL +  '/recipes.csv')
                 .then((recipes) => {
-                console.log('Retrieving Recipe...');
-                console.log('Actually Updating?')
+                console.log('Retrieving Recipes...');
                 return recipes.map(function(currentRecipe,_) {
                         return new Recipe(
                             currentRecipe.recipe_id,
@@ -69,7 +68,7 @@ function Homepage(props) {
             setRecipes(recipeFetchReturn)
         }
         fetchRecipes()
-    }, [])
+    })
 
     return(
         <div style={{textAlign: 'center'}}>
