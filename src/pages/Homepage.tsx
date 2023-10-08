@@ -13,7 +13,7 @@ const columns: GridColDef[] = [
     {field: 'tod', headerName: 'Time of Day', flex: 2}
 ]
 
-function Homepage() {
+function Homepage(props) {
     console.log('Rendering Homepage');
     const [recipes, setRecipes] = useState<Recipe[]>();
 
@@ -35,6 +35,7 @@ function Homepage() {
                             const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
                                 return selectedRecipe.id;
                             })
+                            props.setIds(idsArray);
                             idsArray.forEach((currentId) => {
                                 console.log(`Selected Recipes: ${currentId}`);
                             })

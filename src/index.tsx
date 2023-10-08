@@ -7,18 +7,22 @@ import Homepage from './pages/Homepage';
 import Ingredients from './pages/Ingredients';
 import Instructions from './pages/Instructions';
 import Navigation from './pages/Navigation';
+import {useState} from 'react'
+
+const [ids, setIds] = useState<String[]>();
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <Navigation />
     <HashRouter>
       <Routes>
-        <Route path='/' element={<App/>}></Route>
-        <Route path='/homepage' element={<Homepage/>}></Route>
-        <Route path='/ingredients' element={<Ingredients/>}></Route>
+        <Route path='/' element={<App />}></Route>
+        <Route path='/homepage' element={<Homepage setIds={setIds}/>}></Route>
+        <Route path='/ingredients' element={<Ingredients ids={ids}/>}></Route>
         <Route path='/instructions' element={<Instructions/>}></Route>
       </Routes>
     </HashRouter>
