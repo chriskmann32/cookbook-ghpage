@@ -44,7 +44,7 @@ function Instructions({ids, instructions, setInstructions}) {
                         )
                     });
                 })
-            setInstructions(fetchInstructions)
+            setInstructions(fetchInstructionReturn)
         }
         if (ids) {
             fetchInstructions();
