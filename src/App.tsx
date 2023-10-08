@@ -8,6 +8,7 @@ import { Recipe } from './csv/recipe';
 import { Ingredient } from './csv/ingredient';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import {useState} from 'react'
+import DefaultPage from './pages/DefaultPage';
 
 function App() {
   const [ids, setIds] = useState<String[]>();
@@ -19,6 +20,7 @@ function App() {
       <Navigation />
       <HashRouter>
         <Routes>
+          <Route path='/' element={<DefaultPage/>}></Route>
           <Route path='/homepage' element={<Homepage setIds={setIds} recipes={recipes} setRecipes={setRecipes}/>}></Route>
           <Route path='/ingredients' element={<Ingredients ids={ids} ingredients={ingredients} setIngredients={setIngredients}/>}></Route>
           <Route path='/instructions' element={<Instructions/>}></Route>
