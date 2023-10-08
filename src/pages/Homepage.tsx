@@ -32,7 +32,7 @@ function Homepage({setIds, recipes, setRecipes}) {
                             const selectedRowData: Recipe[] = recipes.filter((row) =>
                                 selectedIds.has(row.id));
                             const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
-                                return selectedRecipe.id;
+                                return selectedRecipe.recipe_id;
                             })
                             setIds(idsArray);
                             idsArray.forEach((currentId) => {

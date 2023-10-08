@@ -31,11 +31,11 @@ function Ingredients({ids, ingredients, setIngredients}) {
         console.log('Staring Ingredient Fetch...')
         const fetchIngredients = async () => {
             const fetchIngredientReturn: Ingredient[] =
-            await readIngredientsCSV(process.env.PUBLIC_URL + './ingredients.csv')
+            await readIngredientsCSV(process.env.PUBLIC_URL + '/ingredients.csv')
                 .then((ingredients) => {
                     console.log('Retrieveing Ingredients...');
                     const filteredIngredients: Ingredient[] = ingredients.filter((ingredient: Ingredient) => {
-                        return ids.contains(ingredient.recipe_id)
+                        return ids.includes(ingredient.recipe_id)
                     })
                     return filteredIngredients.map(function(currentIngredient,_) {
                         return new Ingredient(
