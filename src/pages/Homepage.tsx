@@ -32,8 +32,9 @@ function Homepage() {
                             const selectedIds = new Set(ids);
                             const selectedRowData: Recipe[] = recipes.filter((row) =>
                                 selectedIds.has(row.id));
-                            selectedRowData.map((selectedRecipe) => {
+                            const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
                                 console.log(`Selected Recipes: ${selectedRecipe.id}`);
+                                return selectedRecipe.id;
                             })
                         }}
                     />
