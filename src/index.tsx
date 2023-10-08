@@ -17,14 +17,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Navigation />
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<App />}></Route>
-        <Route path='/homepage' element={<Homepage setIds={setIds}/>}></Route>
-        <Route path='/ingredients' element={<Ingredients ids={ids}/>}></Route>
-        <Route path='/instructions' element={<Instructions/>}></Route>
-      </Routes>
-    </HashRouter>
+    <App />
   </React.StrictMode>
 );
