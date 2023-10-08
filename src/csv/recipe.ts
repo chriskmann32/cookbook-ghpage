@@ -13,7 +13,7 @@ export class Recipe {
         const cookTimeInt = parseInt(cookTime);
         const hours = Math.floor(cookTimeInt / 60);
         const minutes = cookTimeInt % 60;
-        return (hours != 0) ? `${hours}:${minutes}`  : `${minutes}`;
+        return (hours !== 0) ? `${hours}:${minutes}`  : `${minutes}`;
     }
 
     constructor(

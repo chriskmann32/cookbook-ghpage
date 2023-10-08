@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {readRecipeCSV} from "../csv/readCSV"
 import { Recipe } from "../csv/recipe";
- import { GridColDef, DataGrid } from "@mui/x-data-grid";
+import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
     {field: 'recipe_name', headerName: 'Recipe Name', flex: 5},
