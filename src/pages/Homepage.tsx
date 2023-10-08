@@ -4,13 +4,13 @@ import { Recipe } from "../csv/recipe";
  import { GridColDef, DataGrid } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-    {field: 'recipe_name', headerName: 'Recipe Name', resizable: true},
-    {field: 'category', headerName: 'Category', resizable: true},
-    {field: 'rating', headerName: 'Rating', resizable: true},
-    {field: 'cook_time', headerName: 'Cook Time', resizable: true},
-    {field: 'servings', headerName: 'Servings', resizable: true},
-    {field: 'category_sub', headerName: 'Sub Category', resizable: true},
-    {field: 'tod', headerName: 'Time of Day', resizable: true}
+    {field: 'recipe_name', headerName: 'Recipe Name', flex: 5},
+    {field: 'category', headerName: 'Category', flex: 2},
+    {field: 'rating', headerName: 'Rating', flex: 1},
+    {field: 'cook_time', headerName: 'Cook Time', flex: 1},
+    {field: 'servings', headerName: 'Servings', flex: 1},
+    {field: 'category_sub', headerName: 'Sub Category', flex: 3},
+    {field: 'tod', headerName: 'Time of Day', flex: 2}
 ]
 
 function Homepage() {
