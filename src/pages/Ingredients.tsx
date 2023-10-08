@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { Ingredient } from "../csv/ingredient"
 import { readIngredientsCSV } from "../csv/readCSV";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
