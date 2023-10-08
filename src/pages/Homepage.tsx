@@ -15,22 +15,21 @@ const columns: GridColDef[] = [
 
 function Homepage(props) {
     console.log('Rendering Homepage');
-    const [recipes, setRecipes] = useState<Recipe[]>();
 
     function recipeSelection() {
-        if (recipes) {
+        if (props.recipes) {
             return <DataGrid
-                        rows={recipes}
+                        rows={props.recipes}
                         columns={columns}
                         initialState={{
                             pagination: {
-                                paginationModel: {pageSize: recipes.length},
+                                paginationModel: {pageSize: props.recipes.length},
                             },
                         }}
                         checkboxSelection
                         onRowSelectionModelChange={(ids) => {
                             const selectedIds = new Set(ids);
-                            const selectedRowData: Recipe[] = recipes.filter((row) =>
+                            const selectedRowData: Recipe[] = props.recipes.filter((row) =>
                                 selectedIds.has(row.id));
                             const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
                                 return selectedRecipe.id;
@@ -65,10 +64,10 @@ function Homepage(props) {
                         )
                     });
                 })
-            setRecipes(recipeFetchReturn)
+            props.setRecipes(recipeFetchReturn)
         }
         fetchRecipes()
-    })
+    },[])
 
     return(
         <div style={{textAlign: 'center'}}>

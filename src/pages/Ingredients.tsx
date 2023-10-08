@@ -11,16 +11,15 @@ const columns: GridColDef[] = [
 
 function Ingredients(props) {
     console.log('Rendering Ingredients');
-    const [ingredientList, setIngredientList] = useState<Ingredient[]>();
 
     function ingredientSelection() {
-        if (ingredientList) {
+        if (props.ingredients) {
             return <DataGrid
-                    rows={ingredientList}
+                    rows={props.ingredients}
                     columns={columns}
                     initialState={{
                         pagination: {
-                            paginationModel: {pageSize: ingredientList.length},
+                            paginationModel: {pageSize: props.ingredients.length},
                         },
                     }}
                     />
@@ -47,12 +46,12 @@ function Ingredients(props) {
                         )
                     });
                 })
-            setIngredientList(fetchIngredientReturn)
+            props.setIngredients(fetchIngredientReturn)
         }
         if (props.ids) {
             fetchIngredients();
         }
-    })
+    }, [props.ids])
 
     return(
         <div style={{textAlign: 'center'}}>
