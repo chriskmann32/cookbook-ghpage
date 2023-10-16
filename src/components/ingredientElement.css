@@ -1,0 +1,22 @@
+.ingredient_main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    border-color: white;
+    border-style: solid;
+    margin: 1rem;
+    background-color: white;
+    color: black;
+}
+.ingredient_quantity {
+    margin: 1rem;
+    width: 20%;
+}
+.ingredient_unit {
+    margin: 1rem;
+    width: 20%;
+}
+.ingredient_ingredient {
+    margin: 1rem;
+    width: 60%;
+}
