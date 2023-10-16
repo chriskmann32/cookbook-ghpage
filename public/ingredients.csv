@@ -1,35 +1,4 @@
 "quantity"|"unit"|"ingredient"|"recipe_id"
-"2"|"Unit"|"Yellow Onion"|9
-"1"|"Tbsp"|"Olive Oil"|9
-"1"|"Dash"|"Salt"|9
-"0.5"|"Lb"|"Chicken"|9
-"1"|"Tbsp"|"Unsalted Butter"|9
-"2"|"Clove"|"Garlic"|9
-"1"|"Unit"|"Bell Pepper"|9
-"5"|"Spear"|"Asparagus"|9
-"2"|"Unit"|"Yukon Gold Potatoes"|9
-"0.5"|"Box"|"Japnese Curry Roux"|9
-"1"|"Cup"|"Chicken Stock"|9
-"1"|"Cup"|"Water"|9
-"0.75"|"Cup"|"Black Tea"|9
-"1"|"Unit"|"Onion (Finely Chopped)"|16
-"1"|"Unit"|"Bell Pepper (Finely Chopped)"|16
-"1"|"Tsp"|"Onion Powder"|16
-"1"|"Tsp"|"Garlic Powder"|16
-"1"|"Tsp"|"Dried Oregano"|16
-"1"|"Tsp"|"Cumin"|16
-"1.5"|"Tsp"|"Paprika"|16
-"0.5"|"Tsp"|"Cayenne Pepper"|16
-"0.5"|"Tsp"|"Salt"|16
-"0.25"|"Tsp"|"Black Pepper"|16
-"1"|"Tbsp"|"Vegetable Oil"|16
-"16"|"Oz"|"Ground Beef (5% Fat)"|16
-"15"|"Oz"|"Black Beans (Drained)"|16
-"8.5"|"Oz"|"Sweetcorn (Drained)"|16
-"15"|"Oz"|"Diced Tomatoes"|16
-"1"|"Cup"|"Brown Rice"|16
-"1"|"Unit"|"Bouillon Cube"|16
-"2"|"Cup"|"Water"|16
 "1"|"Lb"|"Boneless Skinless Chicken Breast (1/2-inch Pieces)"|19
 "3"|"Tbsp"|"Low Sodium Soy Sauce"|19
 "5"|"Tsp"|"Rice Wine Vinegar"|19
@@ -43,3 +12,27 @@
 "1"|"Unit"|"Red Pepper (1-inch Pieces)"|19
 "2"|"Unit"|"Scallions (Sliced)"|19
 "0.33"|"Cup"|"Peanuts (Chopped)"|19
+"1"|"Tbsp"|"Vegetable Oil"|25
+"1"|"Unit"|"Bell Pepper"|25
+"1"|"Tbsp"|"Minced Ginger"|25
+"2"|"Tsp"|"Garlic Cloves"|25
+"3"|"Tbsp"|"Red Curry Paste"|25
+"1"|"Can"|"Coconut Milk (13-14 Oz)"|25
+"0.5"|"Cup"|"Water"|25
+"1"|"Tsp"|"Kosher Salt"|25
+"0.25"|"Tsp"|"Black Pepper"|25
+"1"|"Lb"|"Peeled Deveined Shrimp"|25
+"2"|"Head"|"Baby Bok Choi"|25
+"2"|"Tbsp"|"Lime Juice"|25
+"0.5"|"Cup"|"Cilantro"|25
+"0.5"|"Lb"|"Pork Sausage"|24
+"1"|"Unit"|"Onion (Finely Chopped)"|24
+"2"|"Tsp"|"Chicken Bouilion Granules"|24
+"0.5"|"Tsp"|"Garlic Powder"|24
+"0.5"|"Tsp"|"Pepper"|24
+"2"|"Unit"|"Red Potatoes (1/2 in. Cubes)"|24
+"2"|"Cip"|"Sliced Kale"|24
+"3"|"Cup"|"2% Milk"|24
+"1"|"Cup"|"Heavy Whipping Cream"|24
+"1"|"Tbsp"|"Corn Starch"|24
+"0.25"|"Cup"|"Cold Water"|24
