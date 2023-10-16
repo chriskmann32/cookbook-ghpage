@@ -1,0 +1,31 @@
+.instruction_main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    border-color: white;
+    border-style: solid;
+    margin: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.instruction_selection {
+    display: flex;
+    flex-direction: row;
+}
+
+.instruction_step {
+    color: black;
+    margin: 1rem
+}
+
+.instruction_stepNumber {
+    margin: auto
+}
+
+.instruction_buttonRight {
+    margin: auto;
+}
+.instruction_buttonLeft {
+    margin: auto;
+}

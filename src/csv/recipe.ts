@@ -1,6 +1,6 @@
 export class Recipe {
     id: string;
-    recipe_id: string;
+    recipe_id: number;
     recipe_name: string;
     category: string;
     rating: string;
@@ -18,7 +18,7 @@ export class Recipe {
 
     constructor(
         recipe_id: string,
-        recipe_name: string,
+        recipe_name: string ,
         category: string,
         rating: string,
         cook_time: string,
@@ -27,7 +27,7 @@ export class Recipe {
         tod: string
     ) {
         this.id = Math.random().toString().substring(2,9) + '_RECIPE';
-        this.recipe_id = recipe_id;
+        this.recipe_id = +recipe_id;
         this.recipe_name = recipe_name;
         this.category = category;
         this.rating = rating;

@@ -12,7 +12,7 @@ import DefaultPage from './pages/DefaultPage';
 import { Instruction } from './csv/instruction';
 
 function App() {
-  const [ids, setIds] = useState<String[]>();
+  const [selectedId, setSelectedId] = useState<Number>(-99);
   const [recipes, setRecipes] = useState<Recipe[]>();
   const [ingredients, setIngredients] = useState<Ingredient[]>();
   const [instructions, setInstructions] = useState<Instruction[]>();
@@ -23,9 +23,9 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path='/' element={<DefaultPage/>}></Route>
-          <Route path='/homepage' element={<Homepage setIds={setIds} recipes={recipes} setRecipes={setRecipes}/>}></Route>
-          <Route path='/ingredients' element={<Ingredients ids={ids} ingredients={ingredients} setIngredients={setIngredients}/>}></Route>
-          <Route path='/instructions' element={<Instructions ids={ids} instructions={instructions} setInstructions={setInstructions}/>}></Route>
+          <Route path='/homepage' element={<Homepage setIds={setSelectedId} recipes={recipes} setRecipes={setRecipes} selectedId={selectedId}/>}></Route>
+          <Route path='/ingredients' element={<Ingredients selectedId={selectedId} ingredients={ingredients} setIngredients={setIngredients}/>}></Route>
+          <Route path='/instructions' element={<Instructions selectedId={selectedId} instructions={instructions} setInstructions={setInstructions}/>}></Route>
         </Routes>
       </HashRouter>
     </React.Fragment>

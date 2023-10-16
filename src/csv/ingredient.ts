@@ -2,7 +2,7 @@ export class Ingredient {
     quantity: string;
     unit: string;
     ingredient: string;
-    recipe_id: string;
+    recipe_id: number;
     id: string;
 
     constructor(
@@ -15,6 +15,6 @@ export class Ingredient {
         this.quantity = quantity;
         this.unit = unit;
         this.ingredient = ingredient;
-        this.recipe_id = recipe_id;
+        this.recipe_id = +recipe_id;
     }
 }
