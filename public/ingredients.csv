@@ -1,30 +1,4 @@
 "quantity"|"unit"|"ingredient"|"recipe_id"
-"1"|"Lb"|"Boneless Skinless Chicken Breast (1/2-inch Pieces)"|19
-"3"|"Tbsp"|"Low Sodium Soy Sauce"|19
-"5"|"Tsp"|"Rice Wine Vinegar"|19
-"3"|"Tsp"|"Cornstarch"|19
-"0.5"|"Cup"|"Water"|19
-"1"|"Tbsp"|"Hoison Sauce"|19
-"2"|"Clove"|"Garlic (Minced)"|19
-"2"|"Tsp"|"Ginger (Minced)"|19
-"0.25"|"Tsp"|"Crushed Red Pepper Flakes"|19
-"3"|"Tsp"|"Canola Oil"|19
-"1"|"Unit"|"Red Pepper (1-inch Pieces)"|19
-"2"|"Unit"|"Scallions (Sliced)"|19
-"0.33"|"Cup"|"Peanuts (Chopped)"|19
-"1"|"Tbsp"|"Vegetable Oil"|25
-"1"|"Unit"|"Bell Pepper"|25
-"1"|"Tbsp"|"Minced Ginger"|25
-"2"|"Tsp"|"Garlic Cloves"|25
-"3"|"Tbsp"|"Red Curry Paste"|25
-"1"|"Can"|"Coconut Milk (13-14 Oz)"|25
-"0.5"|"Cup"|"Water"|25
-"1"|"Tsp"|"Kosher Salt"|25
-"0.25"|"Tsp"|"Black Pepper"|25
-"1"|"Lb"|"Peeled Deveined Shrimp"|25
-"2"|"Head"|"Baby Bok Choi"|25
-"2"|"Tbsp"|"Lime Juice"|25
-"0.5"|"Cup"|"Cilantro"|25
 "0.5"|"Lb"|"Pork Sausage"|24
 "1"|"Unit"|"Onion (Finely Chopped)"|24
 "2"|"Tsp"|"Chicken Bouilion Granules"|24
@@ -36,3 +10,29 @@
 "1"|"Cup"|"Heavy Whipping Cream"|24
 "1"|"Tbsp"|"Corn Starch"|24
 "0.25"|"Cup"|"Cold Water"|24
+"0.5"|"Unit"|"Squash"|27
+"1"|"Cup"|"Cooked Short Grain (Sushi) Rice"|27
+"2"|"Tsp"|"Minced Ginger"|27
+"2"|"Tsp"|"Minced Garlic"|27
+"5.5"|"Cup"|"Water"|27
+"1"|"Pinch"|"Salt"|27
+"1"|"Tbsp"|"Soy Sauce"|27
+"1"|"Tbsp"|"Rice Vinegar"|27
+"1"|"Lb"|"White Fish"|27
+"3"|"Tbsp"|"Chili Crisp"|27
+"1"|"Unit"|"Scallions"|27
+"2"|"Tbsp"|"Olive Oil"|26
+"4"|"Tsp"|"Minced Garlic"|26
+"2"|"Tbsp"|"Minced Ginger"|26
+"1"|"Unit"|"Yellow Onion (Diced)"|26
+"2"|"Tsp"|"Tumeric"|26
+"0.5"|"Tsp"|"Cinnamon"|26
+"28"|"Oz"|"Canned Tomatoes (Whole, Peeled)"|26
+"2.5"|"Lb"|"Chicken Thighs (Boneless, Skinless)"|26
+"1"|"Unit"|"Sweet Potato (Cubed)"|26
+"0.25"|"Cup"|"Raisin (Golden)"|26
+"3"|"Cup"|"Chicken Stock"|26
+"1.25"|"Tsp"|"Salt"|26
+"1"|"Tsp"|"Pepper"|26
+"1"|"Tbsp"|"Lemon Juice"|26
+"0.5"|"Cup"|"Cilantro"|26
