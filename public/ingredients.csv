@@ -1,15 +1,38 @@
 "quantity"|"unit"|"ingredient"|"recipe_id"
-"0.5"|"Lb"|"Pork Sausage"|24
-"1"|"Unit"|"Onion (Finely Chopped)"|24
-"2"|"Tsp"|"Chicken Bouilion Granules"|24
-"0.5"|"Tsp"|"Garlic Powder"|24
-"0.5"|"Tsp"|"Pepper"|24
-"2"|"Unit"|"Red Potatoes (1/2 in. Cubes)"|24
-"2"|"Cip"|"Sliced Kale"|24
-"3"|"Cup"|"2% Milk"|24
-"1"|"Cup"|"Heavy Whipping Cream"|24
-"1"|"Tbsp"|"Corn Starch"|24
-"0.25"|"Cup"|"Cold Water"|24
+"0.5"|"Oz"|"Cilantro"|3
+"1"|"Oz"|"Pistachios"|3
+"26.8"|"Oz"|"Chickpeas"|3
+"8"|"Oz"|"Grape Tomatoes"|3
+"2"|"Unit"|"Red Onion"|3
+"1"|"Cup"|"Basmati Rice"|3
+"8"|"Tbsp"|"Sour Cream"|3
+"2"|"Clove"|"Garlic"|3
+"2"|"Unit"|"Lemon"|3
+"2"|"Tsp"|"Veggie Stock Concentrate"|3
+"2"|"Tbsp"|"Schwarma Spice Blend"|3
+"2"|"Tsp"|"Hot Sauce"|3
+"2"|"Tsp"|"Olive Oil"|3
+"3"|"Tbsp"|"Butter"|3
+"1"|"Dash"|"Kosher Salt"|3
+"1"|"Dash"|"Pepper"|3
+"1"|"Unit"|"Onion (Finely Chopped)"|16
+"1"|"Unit"|"Bell Pepper (Finely Chopped)"|16
+"1"|"Tsp"|"Onion Powder"|16
+"1"|"Tsp"|"Garlic Powder"|16
+"1"|"Tsp"|"Dried Oregano"|16
+"1"|"Tsp"|"Cumin"|16
+"1.5"|"Tsp"|"Paprika"|16
+"0.5"|"Tsp"|"Cayenne Pepper"|16
+"0.5"|"Tsp"|"Salt"|16
+"0.25"|"Tsp"|"Black Pepper"|16
+"1"|"Tbsp"|"Vegetable Oil"|16
+"16"|"Oz"|"Ground Beef (5% Fat)"|16
+"15"|"Oz"|"Black Beans (Drained)"|16
+"8.5"|"Oz"|"Sweetcorn (Drained)"|16
+"15"|"Oz"|"Diced Tomatoes"|16
+"1"|"Cup"|"Brown Rice"|16
+"1"|"Unit"|"Bouillon Cube"|16
+"2"|"Cup"|"Water"|16
 "0.5"|"Unit"|"Squash"|27
 "1"|"Cup"|"Cooked Short Grain (Sushi) Rice"|27
 "2"|"Tsp"|"Minced Ginger"|27
@@ -21,18 +44,3 @@
 "1"|"Lb"|"White Fish"|27
 "3"|"Tbsp"|"Chili Crisp"|27
 "1"|"Unit"|"Scallions"|27
-"2"|"Tbsp"|"Olive Oil"|26
-"4"|"Tsp"|"Minced Garlic"|26
-"2"|"Tbsp"|"Minced Ginger"|26
-"1"|"Unit"|"Yellow Onion (Diced)"|26
-"2"|"Tsp"|"Tumeric"|26
-"0.5"|"Tsp"|"Cinnamon"|26
-"28"|"Oz"|"Canned Tomatoes (Whole, Peeled)"|26
-"2.5"|"Lb"|"Chicken Thighs (Boneless, Skinless)"|26
-"1"|"Unit"|"Sweet Potato (Cubed)"|26
-"0.25"|"Cup"|"Raisin (Golden)"|26
-"3"|"Cup"|"Chicken Stock"|26
-"1.25"|"Tsp"|"Salt"|26
-"1"|"Tsp"|"Pepper"|26
-"1"|"Tbsp"|"Lemon Juice"|26
-"0.5"|"Cup"|"Cilantro"|26
