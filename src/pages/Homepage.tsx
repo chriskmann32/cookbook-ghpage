@@ -1,45 +1,17 @@
 import { useEffect } from "react";
 import {readRecipeCSV} from "../csv/readCSV"
 import { Recipe } from "../csv/recipe";
-import { GridColDef, DataGrid } from "@mui/x-data-grid";
+import RecipeElement from "../components/recipeElement";
 
-const columns: GridColDef[] = [
-    {field: 'recipe_name', headerName: 'Recipe Name', flex: 5},
-    {field: 'category', headerName: 'Category', flex: 2},
-    {field: 'rating', headerName: 'Rating', flex: 1},
-    {field: 'cook_time', headerName: 'Cook Time', flex: 1},
-    {field: 'servings', headerName: 'Servings', flex: 1},
-    {field: 'category_sub', headerName: 'Sub Category', flex: 3},
-    {field: 'tod', headerName: 'Time of Day', flex: 2}
-]
-
-function Homepage({setIds, recipes, setRecipes}) {
+function Homepage({setIds, recipes, setRecipes, selectedId}) {
     console.log('Rendering Homepage');
+    console.log(`ID: ${selectedId}`)
 
     function recipeSelection() {
         if (recipes) {
-            return <DataGrid
-                        rows={recipes}
-                        columns={columns}
-                        initialState={{
-                            pagination: {
-                                paginationModel: {pageSize: recipes.length},
-                            },
-                        }}
-                        checkboxSelection
-                        onRowSelectionModelChange={(ids) => {
-                            const selectedIds = new Set(ids);
-                            const selectedRowData: Recipe[] = recipes.filter((row) =>
-                                selectedIds.has(row.id));
-                            const idsArray: String[] = selectedRowData.map((selectedRecipe) => {
-                                return selectedRecipe.recipe_id;
-                            })
-                            setIds(idsArray);
-                            idsArray.forEach((currentId) => {
-                                console.log(`Selected Recipes: ${currentId}`);
-                            })
-                        }}
-                    />
+            return recipes.map((recipe: Recipe) => {
+                return RecipeElement(recipe, setIds, selectedId);
+            })
         }
         return <div>NO RECIPES FOUND</div>
     }
@@ -50,19 +22,7 @@ function Homepage({setIds, recipes, setRecipes}) {
             const recipeFetchReturn: Recipe[] =
             await readRecipeCSV(process.env.PUBLIC_URL +  '/recipes.csv')
                 .then((recipes) => {
-                console.log('Retrieving Recipes...');
-                return recipes.map(function(currentRecipe,_) {
-                        return new Recipe(
-                            currentRecipe.recipe_id,
-                            currentRecipe.recipe_name,
-                            currentRecipe.category,
-                            currentRecipe.rating,
-                            currentRecipe.cook_time,
-                            currentRecipe.servings,
-                            currentRecipe.category_sub,
-                            currentRecipe.tod
-                        )
-                    });
+                    return recipes;
                 })
             setRecipes(recipeFetchReturn)
         }

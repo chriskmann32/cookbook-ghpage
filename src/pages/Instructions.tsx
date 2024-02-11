@@ -1,27 +1,27 @@
-import { DataGrid, GridColDef } from "@mui/x-data-grid"
 import { useEffect } from "react";
 import { Instruction } from "../csv/instruction";
 import { readInstructionsCSV } from "../csv/readCSV";
+import InstructionElement from "../components/instructionElement";
+import {useState} from 'react'
 
-const columns: GridColDef[] = [
-    {field: 'step_number', headerName: 'Step Number'},
-    {field: 'step', headerName: 'Step', flex: 1}
-]
-
-function Instructions({ids, instructions, setInstructions}) {
+function Instructions({selectedId, instructions, setInstructions}) {
     console.log('Rendering Instructions');
+    const [instructionNumber, setInstructionNumber] = useState(1);
 
     function instructionSelection() {
+        console.log('Starting Selection');
         if (instructions) {
-            return <DataGrid
-                    rows={instructions}
-                    columns={columns}
-                    initialState={{
-                        pagination: {
-                            paginationModel: {pageSize: instructions.length},
-                        },
-                    }}
-                    />
+            const selectedInstruction: Instruction = instructions.find((instruction: Instruction) =>
+                {
+                    return +instruction.step_number === instructionNumber;
+                }
+                )
+            return InstructionElement(
+                selectedInstruction,
+                instructionNumber,
+                setInstructionNumber,
+                instructions.length
+            )
         }
         return <div>No RECIPES SELECTED</div>
     }
@@ -33,23 +33,16 @@ function Instructions({ids, instructions, setInstructions}) {
             await readInstructionsCSV(process.env.PUBLIC_URL + '/instructions.csv')
                 .then((instructions) => {
                     console.log('Retrieving Instructions...');
-                    const filteredInstructions: Instruction[] = instructions.filter((instruction: Instruction) => {
-                        return ids.includes(instruction.recipe_id)
+                    return instructions.filter((instruction: Instruction) => {
+                        return (selectedId === instruction.recipe_id);
                     })
-                    return filteredInstructions.map(function(currentInstruction,_) {
-                        return new Instruction(
-                            currentInstruction.recipe_id,
-                            currentInstruction.step_number,
-                            currentInstruction.step
-                        )
-                    });
-                })
-            setInstructions(fetchInstructionReturn)
+                });
+            setInstructions(fetchInstructionReturn);
         }
-        if (ids) {
+        if (selectedId !== -99) {
             fetchInstructions();
         }
-    }, [ids, setInstructions])
+    }, [selectedId, setInstructions])
 
     return(
         <div style={{textAlign: 'center'}}>

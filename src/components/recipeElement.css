@@ -1,0 +1,49 @@
+.recipe_main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    border-color: white;
+    border-style: solid;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.recipe_main--selected {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    border-color: white;
+    border-style: solid;
+    color: black;
+    background-color: white;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.recipe_recipeName {
+    margin: auto;
+}
+
+.recipe_category {
+    margin: auto;
+}
+
+.recipe_rating {
+    margin: auto;
+}
+
+.recipe_cookTime {
+    margin: auto;
+}
+
+.recipe_servings {
+    margin: auto;
+}
+
+.recipe_categorySub {
+    margin: auto;
+}
+
+.recipe_tod {
+    margin: auto;
+}

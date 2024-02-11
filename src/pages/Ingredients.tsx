@@ -1,28 +1,17 @@
 import { useEffect } from "react"
 import { Ingredient } from "../csv/ingredient"
 import { readIngredientsCSV } from "../csv/readCSV";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import IngredientElement from "../components/ingredientElement";
 
-const columns: GridColDef[] = [
-    {field: 'quantity', headerName: 'Quantity', flex: 1},
-    {field: 'unit', headerName: 'Unit', flex: 1},
-    {field: 'ingredient', headerName: 'Ingredient', flex: 3}
-]
-
-function Ingredients({ids, ingredients, setIngredients}) {
+function Ingredients({selectedId, ingredients, setIngredients}) {
     console.log('Rendering Ingredients');
+    console.log(`IDs: ${selectedId}`)
 
     function ingredientSelection() {
         if (ingredients) {
-            return <DataGrid
-                    rows={ingredients}
-                    columns={columns}
-                    initialState={{
-                        pagination: {
-                            paginationModel: {pageSize: ingredients.length},
-                        },
-                    }}
-                    />
+            return ingredients.map((ingredient: Ingredient) => {
+                return IngredientElement(ingredient);
+            })
         }
         return <div>No RECIPES SELECTED</div>
     }
@@ -34,24 +23,16 @@ function Ingredients({ids, ingredients, setIngredients}) {
             await readIngredientsCSV(process.env.PUBLIC_URL + '/ingredients.csv')
                 .then((ingredients) => {
                     console.log('Retrieveing Ingredients...');
-                    const filteredIngredients: Ingredient[] = ingredients.filter((ingredient: Ingredient) => {
-                        return ids.includes(ingredient.recipe_id)
+                    return ingredients.filter((ingredient: Ingredient) => {
+                        return selectedId === ingredient.recipe_id
                     })
-                    return filteredIngredients.map(function(currentIngredient,_) {
-                        return new Ingredient(
-                            currentIngredient.quantity,
-                            currentIngredient.unit,
-                            currentIngredient.ingredient,
-                            currentIngredient.recipe_id
-                        )
-                    });
                 })
             setIngredients(fetchIngredientReturn)
         }
-        if (ids) {
+        if (selectedId !== -99) {
             fetchIngredients();
         }
-    }, [ids, setIngredients])
+    }, [selectedId, setIngredients])
 
     return(
         <div style={{textAlign: 'center'}}>
