@@ -1,45 +1,99 @@
 "quantity"|"unit"|"ingredient"|"recipe_id"
-"2"|"Unit"|"Yellow Onion"|9
-"1"|"Tbsp"|"Olive Oil"|9
-"1"|"Dash"|"Salt"|9
-"0.5"|"Lb"|"Chicken"|9
-"1"|"Tbsp"|"Unsalted Butter"|9
-"2"|"Clove"|"Garlic"|9
-"1"|"Unit"|"Bell Pepper"|9
-"5"|"Spear"|"Asparagus"|9
-"2"|"Unit"|"Yukon Gold Potatoes"|9
-"0.5"|"Box"|"Japnese Curry Roux"|9
-"1"|"Cup"|"Chicken Stock"|9
-"1"|"Cup"|"Water"|9
-"0.75"|"Cup"|"Black Tea"|9
-"1"|"Unit"|"Onion (Finely Chopped)"|16
-"1"|"Unit"|"Bell Pepper (Finely Chopped)"|16
-"1"|"Tsp"|"Onion Powder"|16
-"1"|"Tsp"|"Garlic Powder"|16
-"1"|"Tsp"|"Dried Oregano"|16
-"1"|"Tsp"|"Cumin"|16
-"1.5"|"Tsp"|"Paprika"|16
-"0.5"|"Tsp"|"Cayenne Pepper"|16
-"0.5"|"Tsp"|"Salt"|16
-"0.25"|"Tsp"|"Black Pepper"|16
-"1"|"Tbsp"|"Vegetable Oil"|16
-"16"|"Oz"|"Ground Beef (5% Fat)"|16
-"15"|"Oz"|"Black Beans (Drained)"|16
-"8.5"|"Oz"|"Sweetcorn (Drained)"|16
-"15"|"Oz"|"Diced Tomatoes"|16
-"1"|"Cup"|"Brown Rice"|16
-"1"|"Unit"|"Bouillon Cube"|16
-"2"|"Cup"|"Water"|16
-"1"|"Lb"|"Boneless Skinless Chicken Breast (1/2-inch Pieces)"|19
-"3"|"Tbsp"|"Low Sodium Soy Sauce"|19
-"5"|"Tsp"|"Rice Wine Vinegar"|19
-"3"|"Tsp"|"Cornstarch"|19
-"0.5"|"Cup"|"Water"|19
-"1"|"Tbsp"|"Hoison Sauce"|19
-"2"|"Clove"|"Garlic (Minced)"|19
-"2"|"Tsp"|"Ginger (Minced)"|19
-"0.25"|"Tsp"|"Crushed Red Pepper Flakes"|19
-"3"|"Tsp"|"Canola Oil"|19
-"1"|"Unit"|"Red Pepper (1-inch Pieces)"|19
-"2"|"Unit"|"Scallions (Sliced)"|19
-"0.33"|"Cup"|"Peanuts (Chopped)"|19
+"1"|"Cup"|"Sushi Rice"|28
+"0.25"|"Cup"|"Rice Wine Vinegar"|28
+"2"|"Tsp"|"Sugar"|28
+"1"|"Tsp"|"Salt"|28
+"8"|"Oz"|"Salmon Fillets"|28
+"1"|"Tbsp"|"Soy Sauce"|28
+"0.25"|"Cup"|"Cream Cheese"|28
+"0.25"|"Cup"|"Mayonnaise"|28
+"2"|"Tbsp"|"Siracha"|28
+"3"|"Unit"|"Jalapeno"|28
+"2"|"Unit"|"Green Onion"|28
+"1"|"Unit"|"Frozen Edamame (12Oz Thawed)"|30
+"6"|"Cup"|"Brussel Sprout and Kale Mix"|30
+"4"|"Cup"|"Siracha Baked Tofu"|30
+"0.5"|"Cup"|"Peanut Butter"|30
+"0.25"|"Cup"|"Lime Juice"|30
+"1"|"Tbsp"|"Soy Sauce"|30
+"1"|"Tbsp"|"Minced Ginger"|30
+"2"|"Tsp"|"Toasted Sesame Oil"|30
+"2"|"Clove"|"Garlic"|30
+"0.25"|"Cup"|"Water"|30
+"1"|"Block"|"Extra-Firm Tofu"|31
+"1"|"Tsp"|"Olive Oil"|31
+"2"|"Tbsp"|"Soy Sauce"|31
+"1.5"|"Tbsp"|"Siracha"|31
+"1.5"|"Cup"|"Cooked Chicken"|29
+"6"|"Cup"|"Chopped Kale"|29
+"1"|"Cup"|"Chopped Celery"|29
+"0.33"|"Cup"|"Slivered Almonds"|29
+"0.33"|"Cup"|"Golden Raisins"|29
+"0.5"|"Cup"|"Mayonnaise"|29
+"3"|"Tbsp"|"Apple Cider Vinegar"|29
+"1.5"|"Tbsp"|"Honey"|29
+"0.5"|"Tbsp"|"Dijon Mustard"|29
+"0.25"|"Tsp"|"Salt"|29
+"0.25"|"Tsp"|"Black Pepper"|29
+"3"|"Lb"|"Chicken Breast"|32
+"1"|"Cup"|"Chicken Broth"|32
+"1"|"Tsp"|"Salt"|32
+"1"|"Tsp"|"Pepper"|32
+"1"|"Tsp"|"Garlic Powder"|32
+"1"|"Tsp"|"Onion Powder"|32
+"1"|"Tbsp"|"Cooking Oil"|33
+"1"|"Unit"|"Yellow Onion"|33
+"4"|"Clove"|"Garlic"|33
+"13"|"Unit"|"Habanero"|33
+"3"|"Unit"|"Thyme Spring"|33
+"2.5"|"Tbsp"|"Jamacian Curry Powder"|33
+"12"|"Tsp"|"Salt"|33
+"0.5"|"Tsp"|"Black Pepper"|33
+"1"|"Tsp"|"Tumeric"|33
+"1"|"Tsp"|"Cloves"|33
+"2"|"Tsp"|"Cinnamon"|33
+"12"|"Cup"|"Bok Choy"|33
+"1"|"Lb"|"Sweet Potaties (Peeled and Diced)"|33
+"3"|"Cup"|"Black Eyed Peas (Drained and Rinsed)"|33
+"2"|"Cup"|"Water"|33
+"1"|"Cup"|"Coconut Milk"|33
+"0.25"|"Cup"|"Lime Juice (About 2 Limes)"|33
+"2"|"Tbsp"|"Cumin Seed"|35
+"2"|"Tbsp"|"Whole Mustard Seed"|35
+"2"|"Tbsp"|"Coriander Seed"|35
+"1"|"Tbsp"|"Fenugreek Seed"|35
+"1"|"Tbsp"|"Allspice Berries"|35
+"1"|"Tsp"|"Ground Ginger"|35
+"1"|"Tsp"|"White or Black Pepper"|35
+"4"|"Tbsp"|"Ground Tumeric"|35
+"3"|"Lb"|"Chicken Breast"|32
+"1"|"Cup"|"Chicken Broth"|32
+"1"|"Tsp"|"Salt"|32
+"1"|"Tsp"|"Pepper"|32
+"1"|"Tsp"|"Garlic Powder"|32
+"1"|"Tsp"|"Onion Powder"|32
+"1"|"Tbsp"|"Cooking Oil"|33
+"1"|"Unit"|"Yellow Onion"|33
+"4"|"Clove"|"Garlic"|33
+"13"|"Unit"|"Habanero"|33
+"3"|"Unit"|"Thyme Spring"|33
+"2.5"|"Tbsp"|"Jamacian Curry Powder"|33
+"12"|"Tsp"|"Salt"|33
+"0.5"|"Tsp"|"Black Pepper"|33
+"1"|"Tsp"|"Tumeric"|33
+"1"|"Tsp"|"Cloves"|33
+"2"|"Tsp"|"Cinnamon"|33
+"12"|"Cup"|"Bok Choy"|33
+"1"|"Lb"|"Sweet Potaties (Peeled and Diced)"|33
+"3"|"Cup"|"Black Eyed Peas (Drained and Rinsed)"|33
+"2"|"Cup"|"Water"|33
+"1"|"Cup"|"Coconut Milk"|33
+"0.25"|"Cup"|"Lime Juice (About 2 Limes)"|33
+"2"|"Tbsp"|"Cumin Seed"|35
+"2"|"Tbsp"|"Whole Mustard Seed"|35
+"2"|"Tbsp"|"Coriander Seed"|35
+"1"|"Tbsp"|"Fenugreek Seed"|35
+"1"|"Tbsp"|"Allspice Berries"|35
+"1"|"Tsp"|"Ground Ginger"|35
+"1"|"Tsp"|"White or Black Pepper"|35
+"4"|"Tbsp"|"Ground Tumeric"|35
