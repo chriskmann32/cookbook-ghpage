@@ -1,7 +1,5 @@
 import { Instruction } from "../csv/instruction";
 import './instructionElement.css'
-import {IconButton} from '@mui/material'
-import {ArrowCircleLeft, ArrowCircleRight} from '@mui/icons-material'
 
 
 function InstructionElement(instruction: Instruction, instructionNumber: number, setInstructionNumber: any, maxInstruction: number) {
