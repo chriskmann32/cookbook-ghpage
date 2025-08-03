@@ -11,17 +11,14 @@ function Instructions({selectedId, instructions, setInstructions}) {
     function instructionSelection() {
         console.log('Starting Selection');
         if (instructions) {
-            const selectedInstruction: Instruction = instructions.find((instruction: Instruction) =>
-                {
-                    return +instruction.step_number === instructionNumber;
-                }
+            return instructions.map((instruction) => {
+                return InstructionElement(
+                    instruction,
+                    instructionNumber,
+                    setInstructionNumber,
+                    instructions.length
                 )
-            return InstructionElement(
-                selectedInstruction,
-                instructionNumber,
-                setInstructionNumber,
-                instructions.length
-            )
+            })
         }
         return <div>No RECIPES SELECTED</div>
     }
