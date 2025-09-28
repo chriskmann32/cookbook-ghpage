@@ -1,32 +1,39 @@
 "quantity"|"unit"|"ingredient"|"recipe_id"
-"2"|"Unit"|"Yellow Onion"|9
-"1"|"Tbsp"|"Olive Oil"|9
-"1"|"Dash"|"Salt"|9
-"0.5"|"Lb"|"Chicken"|9
-"1"|"Tbsp"|"Unsalted Butter"|9
-"2"|"Clove"|"Garlic"|9
-"1"|"Unit"|"Bell Pepper"|9
-"5"|"Spear"|"Asparagus"|9
-"2"|"Unit"|"Yukon Gold Potatoes"|9
-"0.5"|"Box"|"Japnese Curry Roux"|9
-"1"|"Cup"|"Chicken Stock"|9
-"1"|"Cup"|"Water"|9
-"0.75"|"Cup"|"Black Tea"|9
-"1"|"Unit"|"White Onion"|36
-"2"|"Lb"|"Zuccini"|36
-"1"|"Dash"|"Salt"|36
-"1"|"Dash"|"Pepper"|36
-"2"|"Clove"|"Garlic"|36
-"1"|"Oz"|"Basil"|36
-"1"|"Lb"|"Ziti"|36
-"8"|"Oz"|"Ricotta"|36
-"1"|"Dash"|"Crushed Red Pepper"|36
-"1"|"Dash"|"Lemon Zest"|36
-"2"|"Oz"|"Grated Parmesan"|36
-"5"|"Tbsp"|"Extra-Virgin Olive Oil"|36
-"1"|"Cup"|"Sliced Almonds"|37
-"2"|"Unit"|"Lemon"|37
-"1"|"Dash"|"Salt"|37
-"0.75"|"Cup"|"Extra-Virgin Olive Oil"|37
-"2"|"Clove"|"Garlic"|37
-"5"|"Oz"|"Kale"|37
+"2"|"Pt"|"Cherry or Grape Tomatoes"|13
+"1"|"Unit"|"Shallot"|13
+"3"|"Clove"|"Garlic"|13
+"5"|"Strip"|"Roasted Red Pepper"|13
+"0.5"|"Cup"|"Olive Oil"|13
+"1"|"Unit"|"Salt"|13
+"1"|"Unit"|"Crushed Red Pepper Flakes"|13
+"8"|"Oz"|"Feta Block"|13
+"1"|"Unit"|"Ground Thyme"|13
+"10"|"Oz"|"Penne Pasta"|13
+"1"|"Lb"|"Boneless Skinless Chicken Breast (1/2-inch Pieces)"|19
+"3"|"Tbsp"|"Low Sodium Soy Sauce"|19
+"5"|"Tsp"|"Rice Wine Vinegar"|19
+"3"|"Tsp"|"Cornstarch"|19
+"0.5"|"Cup"|"Water"|19
+"1"|"Tbsp"|"Hoison Sauce"|19
+"2"|"Clove"|"Garlic (Minced)"|19
+"2"|"Tsp"|"Ginger (Minced)"|19
+"0.25"|"Tsp"|"Crushed Red Pepper Flakes"|19
+"3"|"Tsp"|"Canola Oil"|19
+"1"|"Unit"|"Red Pepper (1-inch Pieces)"|19
+"2"|"Unit"|"Scallions (Sliced)"|19
+"0.33"|"Cup"|"Peanuts (Chopped)"|19
+"1"|"Tbsp"|"Vegetable Oil"|25
+"1"|"Unit"|"Bell Pepper"|25
+"1"|"Tbsp"|"Minced Ginger"|25
+"2"|"Tsp"|"Garlic Cloves"|25
+"3"|"Tbsp"|"Red Curry Paste"|25
+"1"|"Can"|"Coconut Milk (13-14 Oz)"|25
+"0.5"|"Cup"|"Water"|25
+"1"|"Tsp"|"Kosher Salt"|25
+"0.25"|"Tsp"|"Black Pepper"|25
+"1"|"Lb"|"Peeled Deveined Shrimp"|25
+"2"|"Head"|"Baby Bok Choi"|25
+"2"|"Tbsp"|"Lime Juice"|25
+"0.5"|"Cup"|"Cilantro"|25
+"3"|"Unit"|"Celery"|19
+"3"|"Cup"|"Broccoli Florets (About 1/2 Bag)"|19
